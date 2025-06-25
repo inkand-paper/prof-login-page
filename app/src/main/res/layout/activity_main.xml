@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/CreateTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="40dp"
+            android:text="Create New Account"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/NameTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="14dp"
+            android:text="Name"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/CreateTV"
+            app:layout_constraintStart_toStartOf="@id/CreateTV"
+            app:layout_constraintTop_toBottomOf="@+id/CreateTV" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:hint="Enter your name"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/NameTV"
+            app:layout_constraintStart_toStartOf="@id/NameTV"
+            app:layout_constraintTop_toBottomOf="@+id/NameTV">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/MobileNumberTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="6dp"
+            android:text="Mobile Number"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/Layout1"
+            app:layout_constraintStart_toStartOf="@id/Layout1"
+            app:layout_constraintTop_toBottomOf="@+id/Layout1" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:hint="Your Number"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/MobileNumberTV"
+            app:layout_constraintStart_toStartOf="@id/MobileNumberTV"
+            app:layout_constraintTop_toBottomOf="@+id/MobileNumberTV">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLines="1">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/EmailTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="6dp"
+            android:text="Email"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/Layout2"
+            app:layout_constraintStart_toStartOf="@id/Layout2"
+            app:layout_constraintTop_toBottomOf="@+id/Layout2" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:hint="Your Email"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/EmailTV"
+            app:layout_constraintStart_toStartOf="@id/EmailTV"
+            app:layout_constraintTop_toBottomOf="@+id/EmailTV">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/PasswordTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="6dp"
+            android:text="Password"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/Layout3"
+            app:layout_constraintStart_toStartOf="@id/Layout3"
+            app:layout_constraintTop_toBottomOf="@+id/Layout3" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="4dp"
+            android:hint="Your Password"
+            android:textColorHint="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:errorEnabled="true"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@id/PasswordTV"
+            app:layout_constraintStart_toStartOf="@id/PasswordTV"
+            app:layout_constraintTop_toBottomOf="@+id/PasswordTV">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/CreateAccountBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="18dp"
+            android:layout_marginTop="4dp"
+            app:cornerRadius="5dp"
+            android:backgroundTint="@color/black"
+            android:text="Create Account"
+            app:layout_constraintEnd_toEndOf="@id/Layout4"
+            app:layout_constraintStart_toStartOf="@id/Layout4"
+            app:layout_constraintTop_toBottomOf="@id/Layout4"
+            app:strokeWidth="1dp" />
+        <TextView
+            android:id="@+id/NormalTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Or Continue with Social Accounts"
+            app:layout_constraintTop_toBottomOf="@id/CreateAccountBtn"
+            app:layout_constraintStart_toStartOf="@id/CreateAccountBtn"
+            app:layout_constraintEnd_toEndOf="@id/CreateAccountBtn"
+            android:layout_marginTop="18dp"
+            android:textAlignment="center"/>
+        <LinearLayout
+            android:id="@+id/Linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginEnd="55dp"
+            app:layout_constraintTop_toBottomOf="@id/NormalTV"
+            app:layout_constraintStart_toStartOf="@id/NormalTV"
+            app:layout_constraintEnd_toEndOf="@id/NormalTV">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/google"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:src="@drawable/github"/>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
